@@ -1,0 +1,24 @@
+{
+  "name": "flightaware_application",
+  "version": "1.0.0",
+  "description": "Application 2022 summer internship of Flightaware",
+  "main": "app.js",
+  "scripts": {
+    "test": "\"scripts\" : {"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanlifang/flightaware_application.git"
+  },
+  "keywords": [
+    "JSON",
+    "POST",
+    "Bearer authentication"
+  ],
+  "author": "Lifang Yan",
+  "license": "ISC",
+  "homepage": "https://github.com/yanlifang/flightaware_application#readme",
+  "dependencies": {
+    "xhr2": "^0.2.1"
+  }
+}
