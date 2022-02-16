@@ -1,5 +1,5 @@
-var url = "https://flightaware.com/about/careers/position/4B.428/apply";
-//var url = "https://reqbin.com/echo/post/json"
+//use this for test
+var url = "https://reqbin.com/echo/post/json"
 
 var XMLHttpRequest = require('xhr2')
 var xhr = new XMLHttpRequest();
@@ -29,3 +29,6 @@ var data = `{
 
 xhr.send(data);
 
+
+
+//var url = "https://flightaware.com/about/careers/position/4B.428/apply";
