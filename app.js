@@ -1,12 +1,17 @@
-var XMLHttpRequest = require('xhr2');
+var url = "https://flightaware.com/about/careers/position/4B.428/apply";
+//var url = "https://reqbin.com/echo/post/json"
+
+var XMLHttpRequest = require('xhr2')
 var xhr = new XMLHttpRequest();
-
-var url = "https://reqbin.com/echo/post/json";
-
 xhr.open("POST", url);
 
+//title = "Mobile (iOS) Internship (Summer 2022)"
+//token = window.btoa(title)
+
 xhr.setRequestHeader("Accept", "application/json");
-xhr.setRequestHeader("Content-Type", "application/json");
+xhr.setRequestHeader("Authorization", "Bearer {TW9iaWxlIChpT1MpIEludGVybnNoaXAgKFN1bW1lciAyMDIyKQ==}");
+xhr.setRequestHeader("Content-Type", "application");
+
 
 xhr.onreadystatechange = function(){
 
@@ -17,8 +22,10 @@ xhr.onreadystatechange = function(){
 };
 
 var data = `{
-    "name": Lifang Yan,
-    "email": lifang.yan@gatech.edu
-}`;
+    "name": "Lifang Yan",
+    "email": "lifang.yan@gatech.edu"
+}`
+
 
 xhr.send(data);
+
